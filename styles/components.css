@@ -1,0 +1,34 @@
+@layer components {
+  /* Table */
+  .custom-table {
+    @apply w-full;
+  }
+
+  /* Table defaults */
+  .custom-table th {
+    @apply text-left py-2 px-5;
+  }
+
+  .custom-table td {
+    @apply py-3 sm:px-5;
+  }
+
+  /* Table footer */
+  .page-item {
+    @apply inline-flex items-center justify-center min-w-10 border border-gray-100 rounded cursor-pointer;
+  }
+
+  /* Modal */
+  .modal {
+    @apply fixed left-1/2 top-1/2 -z-20 mt-[-40px] w-[80%] -translate-x-1/2 -translate-y-1/2 py-5 px-8 rounded bg-white opacity-0 transition-all duration-300;
+  }
+
+  .modal.show {
+    @apply z-20 mt-0 opacity-100;
+  }
+
+  /* Backdrop */
+  .backdrop {
+    @apply absolute bottom-0 left-0 right-0 top-0 z-10 h-full w-full bg-black opacity-50;
+  }
+}
